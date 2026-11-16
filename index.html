@@ -1,62 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="fi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nexora Digital Studio</title>
+<meta name="description" content="Nexora suunnittelee moderneja verkkosivuja yrityksille.">
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
 
 body {
   font-family: Arial, sans-serif;
-  background: #080e20;
-  color: white;
+  background: #080d1d;
+  color: #fff;
 }
 
 header {
-  padding: 25px 8%;
+  height: 85px;
+  padding: 0 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #202b49;
+  border-bottom: 1px solid #20294a;
+  background: #0b1227;
 }
 
 .logo {
   font-size: 27px;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 3px;
-  color: #a18aff;
+  color: #a58aff;
 }
 
 nav a {
-  color: #ddd;
+  color: #cbd0e5;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 30px;
+  font-size: 14px;
 }
 
+nav a:hover { color: #a58aff; }
+
 .hero {
-  min-height: 80vh;
+  min-height: 690px;
+  padding: 100px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 40px 20px;
-  background: radial-gradient(ellipse at 50% 40%, #30216b 0%, #111b3a 40%, #080e20 75%);
+  background:
+    radial-gradient(ellipse at 50% 35%, #38246e 0%, #172044 38%, #080d1d 75%);
 }
 
 .tag {
-  color: #b6a5ff;
-  border: 1px solid #7355c9;
-  padding: 10px 20px;
+  border: 1px solid #8063df;
   border-radius: 30px;
-  margin-bottom: 30px;
+  padding: 11px 23px;
+  color: #c5b4ff;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 32px;
 }
 
 h1 {
-  font-size: clamp(45px, 8vw, 82px);
+  font-size: clamp(48px, 8vw, 88px);
+  line-height: 1.1;
+  letter-spacing: -4px;
   margin-bottom: 25px;
-  letter-spacing: -3px;
 }
 
 h1 span {
@@ -64,65 +81,105 @@ h1 span {
 }
 
 .hero p {
-  max-width: 600px;
-  color: #c1c8df;
-  line-height: 1.8;
-  font-size: 18px;
+  max-width: 620px;
+  color: #c1c9e2;
+  line-height: 1.9;
+  font-size: 17px;
 }
 
-.btn {
+.button {
   display: inline-block;
   margin-top: 35px;
-  padding: 16px 32px;
-  background: linear-gradient(90deg, #6245d9, #9568ff);
+  padding: 17px 35px;
+  border-radius: 8px;
+  background: linear-gradient(110deg, #6544dc, #a06cff);
   color: white;
   text-decoration: none;
-  border-radius: 8px;
   font-weight: bold;
+  transition: 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 35px #7853d955;
 }
 
 section {
-  padding: 85px 8%;
+  padding: 100px 9%;
   text-align: center;
 }
 
 section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 38px;
+  margin-bottom: 18px;
 }
 
-section p {
-  color: #b8c0d8;
+.subtitle {
+  color: #aeb8d5;
   line-height: 1.8;
 }
 
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+  margin-top: 55px;
 }
 
 .service {
-  background: #111b35;
-  border: 1px solid #28365c;
-  padding: 35px 25px;
-  border-radius: 14px;
+  background: linear-gradient(145deg, #151f3c, #10172c);
+  border: 1px solid #29375e;
+  border-radius: 15px;
+  padding: 38px 25px;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.service:hover {
+  border-color: #9270ef;
+  transform: translateY(-5px);
 }
 
 .service h3 {
-  color: #a58aff;
-  margin-bottom: 15px;
+  color: #b39aff;
+  margin-bottom: 16px;
+  font-size: 21px;
+}
+
+.service p {
+  color: #b5bfd9;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.contact {
+  background: radial-gradient(ellipse at center, #21164b, #080d1d 70%);
 }
 
 footer {
-  border-top: 1px solid #202b49;
-  padding: 30px;
+  border-top: 1px solid #20294a;
+  padding: 30px 15px;
   text-align: center;
-  color: #8e9ab9;
+  color: #8793b2;
+  font-size: 13px;
+}
+
+@media(max-width: 600px) {
+  header {
+    padding: 0 5%;
+    height: 75px;
+  }
+  nav a {
+    margin-left: 12px;
+    font-size: 12px;
+  }
+  .logo { font-size: 22px; }
+  section { padding: 75px 6%; }
+  h1 { letter-spacing: -2px; }
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -133,40 +190,43 @@ footer {
   </nav>
 </header>
 
+<main>
 <div class="hero">
   <div class="tag">DIGITAL STUDIO</div>
-  <h1>Build your <span>digital</span> future.</h1>
-  <p>Luomme moderneja ja näyttäviä verkkosivuja yrityksille, jotka haluavat erottua verkossa.</p>
-  <a href="#contact" class="btn">Ota yhteyttä</a>
+  <h1>Build your<br><span>digital future.</span></h1>
+  <p>Suunnittelemme moderneja, tyylikkäitä ja toimivia verkkosivuja yrityksille, jotka haluavat erottua verkossa.</p>
+  <a href="#contact" class="button">Tutustu palveluihimme</a>
 </div>
 
 <section id="services">
-  <h2>Palvelumme</h2>
-  <p>Autamme yritystäsi näkymään verkossa ammattimaisesti.</p>
+  <h2>Mitä teemme?</h2>
+  <p class="subtitle">Autamme yrityksiä rakentamaan vahvemman digitaalisen näkyvyyden.</p>
+
   <div class="services">
     <div class="service">
       <h3>Web Design</h3>
-      <p>Modernit ja tyylikkäät verkkosivut yrityksellesi.</p>
+      <p>Modernit ja näyttävät verkkosivut, jotka tekevät yrityksestäsi hyvän ensivaikutelman.</p>
     </div>
     <div class="service">
       <h3>Responsive Design</h3>
-      <p>Sivustot, jotka toimivat tietokoneella ja puhelimella.</p>
+      <p>Sivustot, jotka toimivat sujuvasti tietokoneilla, tableteilla ja puhelimilla.</p>
     </div>
     <div class="service">
       <h3>Digital Solutions</h3>
-      <p>Digitaalisia ratkaisuja yrityksesi tarpeisiin.</p>
+      <p>Digitaalisia ratkaisuja, jotka auttavat yritystäsi kehittymään ja kasvamaan.</p>
     </div>
   </div>
 </section>
 
-<section id="contact">
+<section class="contact" id="contact">
   <h2>Rakennetaan jotain hienoa.</h2>
-  <p>Ota yhteyttä ja keskustellaan verkkosivuistasi.</p>
-  <a href="mailto:YOUR_EMAIL_HERE" class="btn">Lähetä viesti</a>
+  <p class="subtitle">Onko yritykselläsi tarvetta uusille verkkosivuille?</p>
+  <a href="mailto:YOUR_EMAIL_HERE" class="button">Ota yhteyttä</a>
 </section>
+</main>
 
 <footer>
-  © 2026 Nexora Digital Studio
+  © 2026 Nexora Digital Studio. All rights reserved.
 </footer>
 
 </body>
