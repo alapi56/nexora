@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexora Digital Studio</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080e20;
+  color: white;
+}
+
+header {
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #202b49;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #a18aff;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: radial-gradient(ellipse at 50% 40%, #30216b 0%, #111b3a 40%, #080e20 75%);
+}
+
+.tag {
+  color: #b6a5ff;
+  border: 1px solid #7355c9;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: clamp(45px, 8vw, 82px);
+  margin-bottom: 25px;
+  letter-spacing: -3px;
+}
+
+h1 span {
+  color: #a58aff;
+}
+
+.hero p {
+  max-width: 600px;
+  color: #c1c8df;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 32px;
+  background: linear-gradient(90deg, #6245d9, #9568ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+section {
+  padding: 85px 8%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section p {
+  color: #b8c0d8;
+  line-height: 1.8;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.service {
+  background: #111b35;
+  border: 1px solid #28365c;
+  padding: 35px 25px;
+  border-radius: 14px;
+}
+
+.service h3 {
+  color: #a58aff;
+  margin-bottom: 15px;
+}
+
+footer {
+  border-top: 1px solid #202b49;
+  padding: 30px;
+  text-align: center;
+  color: #8e9ab9;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">NEXORA.</div>
+  <nav>
+    <a href="#services">Palvelut</a>
+    <a href="#contact">Yhteystiedot</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="tag">DIGITAL STUDIO</div>
+  <h1>Build your <span>digital</span> future.</h1>
+  <p>Luomme moderneja ja näyttäviä verkkosivuja yrityksille, jotka haluavat erottua verkossa.</p>
+  <a href="#contact" class="btn">Ota yhteyttä</a>
+</div>
+
+<section id="services">
+  <h2>Palvelumme</h2>
+  <p>Autamme yritystäsi näkymään verkossa ammattimaisesti.</p>
+  <div class="services">
+    <div class="service">
+      <h3>Web Design</h3>
+      <p>Modernit ja tyylikkäät verkkosivut yrityksellesi.</p>
+    </div>
+    <div class="service">
+      <h3>Responsive Design</h3>
+      <p>Sivustot, jotka toimivat tietokoneella ja puhelimella.</p>
+    </div>
+    <div class="service">
+      <h3>Digital Solutions</h3>
+      <p>Digitaalisia ratkaisuja yrityksesi tarpeisiin.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Rakennetaan jotain hienoa.</h2>
+  <p>Ota yhteyttä ja keskustellaan verkkosivuistasi.</p>
+  <a href="mailto:YOUR_EMAIL_HERE" class="btn">Lähetä viesti</a>
+</section>
+
+<footer>
+  © 2026 Nexora Digital Studio
+</footer>
+
+</body>
+</html>
